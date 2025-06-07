@@ -1,5 +1,6 @@
 # Techin515_Lab5
 
+#####Still working on it — ran into some issues.
   ```
 ###Disscusions
 1. Is server’s confidence always higher than wand’s confidence from your observations? What is your hypothetical reason for the observation?
