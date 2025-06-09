@@ -1,7 +1,7 @@
 # Techin515_Lab5
 
 This repository includes the complete source code, models, training scripts, and documentation for an Edge-to-Cloud gesture recognition system using ESP32 and Flask. Expanding on Lab 4, the project improves performance and user experience by offloading low-confidence predictions from the edge device to a cloud-based model hosted on Microsoft Azure. This edge-first, cloud-assisted approach enhances gesture classification accuracy while maintaining a balance between latency, reliability, and resource efficiency.
-  ```
+
 Disscusions
 1. Is server’s confidence always higher than wand’s confidence from your observations? What is your hypothetical reason for the observation?
 Not always. In most cases, the server’s confidence is slightly higher than the wand’s, but sometimes it’s lower.
