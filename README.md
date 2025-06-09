@@ -9,12 +9,12 @@ One possible reason is that the server model was trained on more diverse and lar
 2. Sketch the data flow of this lab.
 <img src="Images/data%20flow.png" alt="Data Flow" width="600"/>
 
-3. Analyze pros and cons of this edge-first, fallback-to-server approach:
-Pros: It has lower latency for high-confidence predictions; reduces cloud cost and bandwidth use; still ensures accurate results when unsure (fallback to server); works even if server is temporarily unavailable (partial functionality).
+3. Analyze pros and cons of this edge-first, fallback-to-server approach: 
+Pros: It has lower latency for high-confidence predictions; reduces cloud cost and bandwidth use; still ensures accurate results when unsure (fallback to server); works even if server is temporarily unavailable (partial functionality). 
 
 Cons: It relies on network for cloud fallback—no internet = no backup; prediction results may vary between local and server model; potential data privacy concerns when sending raw sensor data to server; harder to maintain consistency if local and cloud models are not aligned.
 
-4. Name a strategy to mitigate at least one limitation named in question 3.
+4. Name a strategy to mitigate at least one limitation named in question 3. 
 To keep predictions consistent, we can regularly update the ESP32’s local model so it matches the server’s version. This helps both models stay in sync. Compressing the model also makes it run better on the device.
 
 ⸻
