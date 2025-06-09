@@ -1,0 +1,4 @@
+When the ESP32 infers locally:
+	•	The device runs the model on-device when confidence is high.
+	•	This provides low-latency response and functions without relying on a network.
+<img src="Images/When the ESP32 infers locally.png" alt="Data Flow" width="600"/>
