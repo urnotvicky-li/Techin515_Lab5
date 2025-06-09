@@ -22,4 +22,10 @@ Cons: It relies on network for cloud fallback—no internet = no backup; predict
 To keep predictions consistent, we can regularly update the ESP32’s local model so it matches the server’s version. This helps both models stay in sync. Compressing the model also makes it run better on the device.
 
 ⸻
+When the ESP32 infers locally:
+	•	The device runs the model on-device when confidence is high.
+	•	This provides low-latency response and functions without relying on a network. 
+ 
+<img src="Images/When the ESP32 infers locally.png" alt="Data Flow" width="600"/>
+
 
