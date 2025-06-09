@@ -14,8 +14,7 @@ Pros: It has lower latency for high-confidence predictions; reduces cloud cost a
 Cons: It relies on network for cloud fallback—no internet = no backup; prediction results may vary between local and server model; potential data privacy concerns when sending raw sensor data to server; harder to maintain consistency if local and cloud models are not aligned.
 
 4. Name a strategy to mitigate at least one limitation named in question 3.
-
-To reduce inconsistency and improve prediction alignment, we can periodically update the local model on the ESP32 to match the latest version used on the server. This ensures both models are trained similarly and maintain similar behavior. Additionally, compressing the model for local inference can help maintain performance within device limitations.
+To keep predictions consistent, we can regularly update the ESP32’s local model so it matches the server’s version. This helps both models stay in sync. Compressing the model also makes it run better on the device.
 
 ⸻
 
