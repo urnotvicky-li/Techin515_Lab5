@@ -7,7 +7,7 @@ Disscusions
 Not always. In most cases, the server’s confidence is slightly higher than the wand’s, but sometimes it’s lower.
 One possible reason is that the server model was trained on more diverse and larger datasets, especially if we merged datasets from multiple students. However, latency and noise in the transmitted data may occasionally reduce the server’s prediction confidence.
 2. Sketch the data flow of this lab.
-<img width="1076" alt="Untitled" src="Images/data flow.png" /> 
+<img width="1076" alt="Untitled" src="[Images/data flow.png](https://github.com/urnotvicky-li/Techin515_Lab5/blob/5e2cc3313f2cf5a666703f7e3029523550c46620/Images/data%20flow.png)" />
 
 3. Analyze pros and cons of this edge-first, fallback-to-server approach:
 Pros: It has lower latency for high-confidence predictions; reduces cloud cost and bandwidth use; still ensures accurate results when unsure (fallback to server); works even if server is temporarily unavailable (partial functionality).
